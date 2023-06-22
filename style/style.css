@@ -20,16 +20,23 @@ hr{
     
 }
     /* top player and top vlog  */
-    .container{
+    main{
         display: flex;
-        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
-    .topplayer{
+    .container{
     background-color: #fff;
     width: 870px;
     margin-top: 10px;
+    margin-bottom: 11px;
+    border-radius: 5px;
     padding: 30px;
 }
+    .topplayer{
+        padding: 12px;
+        
+    }
     /* top payer start */
     .toptext{
         color: var(--textColor);
@@ -61,9 +68,7 @@ hr{
 }
 /* top payer end */
 /* top volg start */
-.blogcontant{
-   
-}
+
 .blogcontant h3{
     color: var(--textColor);
     margin-bottom: 31px;
@@ -102,3 +107,91 @@ hr{
 
 
 /* top volg end */
+/* footer  */
+.maincontorlar{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-column-gap: 30px;
+}
+.latesCourse{
+    padding-top: 14px;
+    padding-bottom: 11px;
+}
+.mainCourses{
+    width: 252.42px;
+    border:none;
+    box-shadow: 10px 10px 50px rgb(199, 189, 189);
+    border-radius: 10px;
+    padding: 13px 0px 20px 11px;
+}
+.fastchild img{
+ width: 224px;
+ height: 104px;
+ 
+ 
+}
+.fastchild h3 {
+    font-size: 1.0416666666667;
+}
+.fastchild p{
+    font-size: 14.69px;
+}
+.allduration{
+    display: flex;
+    padding-top: 19px;
+}
+.revew{
+    display: flex;
+    font-size: 10px;
+    height: 20px;
+    align-items: center;
+    
+    
+}
+.revew p{
+    margin-left: 10.71px;
+    font-size: 14.69px;
+}
+.fa-star.full{
+    color: #FFC014;
+
+}
+.fa-star.emty{
+    color: #AEAEAE    ;
+}
+.coures-duration{
+    display: flex; 
+    margin-left: 30px;
+    font-size: 14px;
+    border: 1px solid #FF4A60;
+    background-color: #f28c9894;
+    padding:7px;
+    height: 24px;
+    color: #f9223b;
+    height: 20px;
+    align-items: center;
+    border-radius: 10px;
+    
+   
+}
+.coures-duration p{
+    margin-left: 5px;
+}
+@media screen and (max-width:688px) {
+
+    .container{
+        width: 100%;
+        
+    }
+    .players,.topblog, .maincontorlar{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);  
+
+    }
+    .maincontorlar{
+        display: grid;
+        grid-row-gap: 20px;
+        
+    }
+    
+}
